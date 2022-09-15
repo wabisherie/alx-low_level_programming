@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#ifdef MAIN_H
+
 /**
 *File - myheader.h
 *
@@ -6,6 +9,7 @@
 *Description: This is a header file declaring functions which I will use to code
 *
 */
+int _putchat(char c);
 
 void print_alphabet(void);
 
