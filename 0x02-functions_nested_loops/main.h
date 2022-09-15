@@ -3,7 +3,7 @@
 *
 *Author : Wabi Sherie
 *
-*Description: This is a header file declaring functions which we will use to code
+*Description: This is a header file declaring functions which I will use to code
 *
 */
 
