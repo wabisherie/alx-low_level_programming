@@ -9,7 +9,7 @@
 *Description: This is a header file declaring functions which I will use to code
 *
 */
-int _putchat(char c);
+int _putchar(char c);
 
 void print_alphabet(void);
 
