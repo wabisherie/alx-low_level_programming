@@ -1,5 +1,5 @@
 #ifndef MAIN_H
-#ifdef MAIN_H
+#define MAIN_H
 
 /**
 *File - myheader.h
@@ -36,3 +36,5 @@ int _abs(int);
 int add(int n, int m);
 
 int print_last_digit(int n);
+
+#endif /*MAIN_H*/
