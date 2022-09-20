@@ -1,10 +1,8 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- *main - prints Putchar
- *
- *Description: prints _putchar
- *
+ *main - prints  _putchar
  *
  *
  * Return: 0 (Success)
@@ -17,7 +15,7 @@ int main(void)
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
-	_putchar('c')
+	_putchar('c');
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
