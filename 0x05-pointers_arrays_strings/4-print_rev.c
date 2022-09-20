@@ -2,7 +2,7 @@
 /**
  * print_rev - prints string in reverse
  *
- * @s - pinter to string being reversed
+ * @s: pointer to string being reversed
  *
  * Return: void
  */
