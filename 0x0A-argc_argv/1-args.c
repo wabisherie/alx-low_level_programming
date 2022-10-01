@@ -8,20 +8,24 @@
  *
  * @argv: array
  *
- * return: Always 0 (Success)
+ *Return:  0 (Success)
  */
 
 int main(int argc, char *argv[])
 {
-	int count = 0;
+	int i;
 
-	if (argc > 0)
+	if (argc == 1)
+
+		printf("%d\n", argc - 1);
+
+	else
 	{
-		while (count < argc)
-		{
-			printf("%s\n", argv[count]);
-			count++;
-		}
+
+		for (i = 0; *argv; i++, argv++)
+			;
+
+		printf("%d\n", i - 1);
 	}
 
 	return (0);
