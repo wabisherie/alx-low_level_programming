@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 /**
  * simple_print_buffer - prints buffer in hexa
  *
@@ -22,45 +21,59 @@ void simple_print_buffer(char *buffer, unsigned int size)
 
 	while (i < size)
 	{
+
 		if (i % 10)
 		{
-			printf(" ");			
+
+			printf(" ");
+
 		}
 
 		if (!(i % 10) && i)
 		{
+
 			printf("\n");
 		}
 
 		printf("0x%02x", buffer[i]);
 
 		i++;
-									    
-		printf("\n");
+
 	}
+
+	printf("\n");
 }
 
+
+
 /**
- * main - check the code
+ * main - check the code for
  *
  * Return: Always 0.
  */
 
 int main(void)
 {
-	char *a;
+	char *p;
 
-	a = _calloc(98, sizeof(char));
+	int i;
 
-	strcpy(a, "Best");
+	p = malloc(sizeof(char) * 10);
 
-	strcpy(a + 4, " School! :)\n");
+	p = _realloc(p, sizeof(char) * 10, sizeof(char) * 98);
 
-	a[97] = '!';
+	i = 0;
 
-	simple_print_buffer(a, 98);
+	while (i < 98)
+	{
 
-	free(a);
+		p[i++] = 98;
+
+	}
+
+	simple_print_buffer(p, 98);
+
+	free(p);
 
 	return (0);
 }
