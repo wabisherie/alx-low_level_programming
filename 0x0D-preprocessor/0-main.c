@@ -7,11 +7,11 @@
  * Return: Always 0.
  */
 
-int main()
+int main(void)
 {
 	int s;
 
 	s = 98 + SIZE;
 	printf("%d\n", s);
-	return(0);
+	return (0);
 }
