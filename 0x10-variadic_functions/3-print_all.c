@@ -82,7 +82,6 @@ void print_all(const char * const format, ...)
 	char *s = "";
 
 	va_start(valist, format);
-
 	i = 0;
 
 	while (format && format[i])
@@ -94,11 +93,8 @@ void print_all(const char * const format, ...)
 			if (*(t[j].x) == format[i])
 			{
 				printf("%s", s);
-
 				t[j].T_func(valist);
-
 				s = ", ";
-
 				break;
 			}
 			j++;
@@ -106,6 +102,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	va_end(valist);
-
 	printf("\n");
 }
