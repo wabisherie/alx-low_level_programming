@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *strlen - length of string
+ *_strlen- length of string
  * @s:char
  * Return:int
  */
